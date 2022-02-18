@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+
+  db:
+    image: mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: 
+      MYSQL_ROOT_PASSWORD:  
+      MYSQL_USERNAME: 
+      MYSQL_USER_PASSWORD: 
+    ports: 
+      - 3307:3306
+  php:
+    image: wordpress:5.7
+    ports:
+      - "8080:80"
+    volumes: 
+      - ../:/var/www/html
+    links: 
+      - db:mysql
+    depends_on: 
+      - db
+
+    
+volumes:
+    db_data: {}
