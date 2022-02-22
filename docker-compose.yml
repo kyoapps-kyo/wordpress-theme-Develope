@@ -12,11 +12,12 @@ services:
     ports: 
       - 3307:3306
   php:
-    image: wordpress:5.7
+    image: wordpress:5.9
     ports:
       - "8080:80"
     volumes: 
-      - ../:/var/www/html
+      # - ../:/var/www/html
+      - '.:/var/www/html'
     links: 
       - db:mysql
     depends_on: 

@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', '123456' );
 define( 'DB_HOST', 'mysql' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         'sj,Q9Swf5NHxsB^v,EJA9mT*`Da-x/M&w-]pq~X*@Bvqm=QrL+16JiJ(5*{/M9!m' );
+define( 'SECURE_AUTH_KEY',  '_OnU<n&=I]q8e{7J[]$%IeZ>mF))]O;L!<1JPOU@PzD)D2:HDQvWRt,tw6 KoToY' );
+define( 'LOGGED_IN_KEY',    '=6It+4E3S2MyhkvY!j9[wW~Yvk]bVx|NnOjG07NjcrvHcvFq1DUTAQ+b::ESX(bx' );
+define( 'NONCE_KEY',        '>Y5]ZQyfw3DD%j=!=1=<Rx(p-@xdt j8{$S2Xm7dH`>[7S|=6%J;&5;lOnS[E3%J' );
+define( 'AUTH_SALT',        'EtEU*@?}s6hJx+ioO#6$ApmJ,+gP.a`Rjz`8pkz~=Lj<7!Cdr1E5@M9r^7I?+o?n' );
+define( 'SECURE_AUTH_SALT', '|/[Q<vX@DtT6wU0;T:Z#-!1O_9NwftXt[o6B}TB6MHi%|Uo*ihN*xgJ}>9[]4=/#' );
+define( 'LOGGED_IN_SALT',   'nWiuFt?.v}:oIo%h}0nFSDs^xUv(&,]k> Oh;itBX;?R@hO8~L(7lhBN<0;~oWy5' );
+define( 'NONCE_SALT',       ',@_j^*]A/Q{>v=}&J9OCIL3Zk1nbT<u@_~bMC+} /Y_?E}5vfP@pY2%xcF<e!.O^' );
 
 /**#@-*/
 
@@ -79,8 +79,9 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
-
+define( 'WP_DEBUG', true );	
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', true );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
